@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.code-playground,.right{
+    height: 100%;
+    width: 50%;
+    padding: 16px;
+}
+.code-playground{
+    background-color: rgb(10, 10, 74);
+}
+.right{
+    background-color:  #454545;
+
+}
+
+label{
+    background-color: rgba(201, 197, 197);
+    border: 1px solid black;
+    display: inline-block;
+    line-height: 30px; 
+    text-align: center; 
+    padding: 0 10px; 
+}
+
+textarea{
+    background-color: rgb(29, 29, 233);
+    height: 80vh;
+    width: 100%;
+    padding: 10px;
+    color: rgb(7, 231, 7);
+}
+#output{
+    background-color: white;
+    height: 99%;
+    width: 99%;
+}
+
+.console-output {
+
+}

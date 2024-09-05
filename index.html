@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+    <style>
+        /* Add any necessary styles here */
+    </style>
+</head>
+<body>
+    <main>
+        <div class="code-playground">
+            <div>
+                <label for="html" id="htmllabel" onclick="changeScale()"> 
+                    <i style="background-color: green;" class="ri-html5-fill"></i> index.html
+                </label> &nbsp;
+                <label for="css" id="csslabel" onclick="changeScale()">
+                    <i style="background-color: green;" class="ri-css3-fill"></i> style.css
+                </label> &nbsp;
+                <label for="js" id="jslabel" onclick="changeScale()">
+                    <i style="background-color: green;" class="ri-javascript-fill"></i> script.js
+                </label> &nbsp;
+            </div>
+            <textarea name="" placeholder="html" onkeydown="run()" id="html">
+<!-- HTML Template -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <p>Welcome to my website.</p>
+</body>
+</html>
+            </textarea>
+            <textarea name="" placeholder="css" onkeydown="run()" id="css">
+/* CSS Template */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    color: #4CAF50;
+}
+            </textarea>
+            <textarea name="" placeholder="js" onkeydown="run()" id="js">
+// JavaScript Template
+document.write("hi")
+
+            </textarea>
+        </div>
+        <div class="right">
+            <iframe src="" id="output" frameborder="0"></iframe>
+            <div id="console" class="console-output"></div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
